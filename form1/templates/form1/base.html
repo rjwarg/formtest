@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>{% block title %} Form Test One {% endblock%}</title>
+        <style type="text/css">
+            body {
+                   background: #ddffee;
+            }
+            h1 {
+                text-align: center;
+                color: darkgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="branding" >
+            {% block branding %}<h1>Form Test 1</h1> {% endblock %}
+        </div>
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+{% extends "form1/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+{% for person in parm1 %} <br>
+  {{ person }}
+{% endfor %}<br>
+<a href="{% url 'index' %}" >Return to index</a><br>
+<img src="{% static 'form1/VALENTINE.png' %}" alt="my_valentine"/>
+{% endblock %}

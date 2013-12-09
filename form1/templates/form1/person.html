@@ -1,0 +1,9 @@
+{% extends "form1/base.html" %}
+
+{% block content %}
+<form action="{% url 'addperson' %}" method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Submit" />
+</form>
+<a href="{% url 'index' %}" >Return to index</a>
+{% endblock %}

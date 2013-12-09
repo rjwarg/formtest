@@ -1,0 +1,9 @@
+{% extends "form1/base.html" %}
+
+
+{% block content %}
+<a href="{% url 'logout' %}">Log out</a>
+<h2>Index template</h2><br>
+<a href="{% url 'addperson' %}">Add Person </a><br>
+<a href="{% url 'seekperson' %}">List people</a>
+{% endblock %}

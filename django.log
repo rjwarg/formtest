@@ -1,0 +1,21 @@
+# IPython log file
+
+get_ipython().magic(u'log')
+get_ipython().magic(u'logon')
+get_ipython().magic(u'logstart django.log')
+from form1.models import Course
+for x in Course.objects.using('informix').all():
+    print x
+    
+for x in Course.objects.using('informix').all():
+    print x
+    
+for x in Course.objects.using('informix').all():
+    print x
+    
+for x in Course.objects.using('informix').all():
+    print x
+    
+for x in Course.objects.using('informix').all():
+    print x
+    
